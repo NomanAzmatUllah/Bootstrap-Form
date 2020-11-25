@@ -1,0 +1,114 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="ProcessingDetails.aspx.vb" Inherits="OutreachAgent.ProcessingDetails" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Css/outreachAgent.css" rel="stylesheet" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <asp:Panel ID="customerform" runat="server">
+
+                <section class="contact py-5 custom_personal_details" id="contact">
+                    <div class="Campaigncontainer">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header setCustomerCardHeight bgcolor">Processing  Details</div>
+                                    <div class="card-body">
+
+                                        <div class="form-row col-md-12 setmrginpx">
+                                            <div class="form-group form-inline col-md-6">
+                                                <label class="col-md-2" style="display: inline-block;">Data1</label>
+                                                <input type="text" class="form-control col-md-10" />
+                                            </div>
+                                            <div class="form-group form-inline col-md-6">
+                                                <label class="col-md-2" style="display: inline-block;">Data2</label>
+                                                <input type="email" class="form-control col-md-10" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row col-md-12 setmrginpx">
+                                            <div class="form-group form-inline col-md-6">
+                                                <label class="col-md-2" style="display: inline-block;">Data3</label>
+                                                <input type="text" class="form-control col-md-10" />
+                                            </div>
+                                            <div class="form-group form-inline col-md-6">
+                                                <label class="col-md-2" style="display: inline-block;">Data4</label>
+                                                <input type="text" class="form-control col-md-10" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row col-md-12 setmrginpx">
+                                            <div class="form-group form-inline col-md-6">
+                                                <label class="col-md-2" style="display: inline-block;">Data5</label>
+                                                <input type="text" class="form-control col-md-10" />
+                                            </div>
+                                            <div class="form-group form-inline col-md-6">
+                                                <label class="col-md-2" style="display: inline-block;">Data6</label>
+                                                <input type="text" class="form-control col-md-10" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row col-md-12 setmrginpx">
+                                            <div class="form-group form-inline col-md-6">
+                                                <label class="col-md-2" style="display: inline-block;">Result</label>
+                                                <asp:DropDownList ID="ResultDropdown" runat="server" class="form-control col-md-10"></asp:DropDownList>
+                                            </div>
+                                            <div class="form-group form-inline col-md-6">
+                                                <label class="col-md-2" style="display: inline-block;">Date</label>
+                                                <asp:TextBox ID="Datetxt" runat="server" CssClass="form-control col-md-10" ReadOnly="true"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                        <div class="form-row col-md-12 setmrginpx">
+                                            <div class="form-group form-inline col-md-6">
+                                                <label class="col-md-2" style="display: inline-block;"></label>
+                                                <button type="button" class="form-group form-inline col-md-10 btn btn-info">Finish</button>
+
+                                            </div>
+                                            <div class="form-group form-inline col-md-6">
+                                                <label class="col-md-2" style="display: inline-block;"></label>
+                                                <button type="button" class="form-group form-inline col-md-10 btn btn-info">Save</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-row form-inline col-md-12" style="margin-top: 0px;">
+                                            <div class="col-md-8">
+                                                <button type="button" class="btn btn-info col-md-6">Not Ready</button>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input type="button" value="Finish" class="btn btn-info" id="finish" />
+                                                <%--<button type="button" class="btn btn-info">Finish</button>--%>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input type="button" value="Save" class="btn btn-info" id="Save" />
+                                                <%--<button type="button" class="btn btn-info">Save</button>--%>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row col-md-12" style="margin-top: 10px;">
+                                            <div class="form-group col-md-12">
+                                                <%--<label> History</label>--%>
+                                                <textarea name="comment" rows="3" placeholder="Script" class="form-control col-md-12" style="overflow-y: scroll" id="description"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+            </asp:Panel>
+        </div>
+    </form>
+</body>
+</html>
